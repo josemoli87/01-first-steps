@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "SEO Title",
+  description: "SEO Title",
+};
+
 export default function Abaut() {
   return (
     <>
