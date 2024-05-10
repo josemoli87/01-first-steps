@@ -3,10 +3,10 @@ export const metadata = {
   description: "SEO Title",
 };
 
-export default function Abaut() {
+export default function About() {
   return (
     <>
-      <samp className="text-5xl">Abaut Page</samp>
+      <samp className="text-5xl">About Page</samp>
     </>
   );
 }
