@@ -3,6 +3,7 @@ import React from 'react';
 import { IoBrowsersOutline, IoLogoReact } from 'react-icons/io5';
 import SidebarMenuItem from './SidebarMenuItem';
 import { ImCalculator } from 'react-icons/im';
+import Link from 'next/link';
 
 const menuItems = [
   {
@@ -29,7 +30,9 @@ const Sidebar = () => {
       <div id="logo" className="my-4 px-6">
         <h1 className="flex items-center text-lg md:text-2xl font-bold text-white">
           <IoLogoReact className="mr-2" />
-          <span className="mr-1">JGM </span>
+          <Link href="/">
+            <span className="mr-1">JGM </span>
+          </Link>
           <span className="text-blue-500 mr-1"> FPS</span>.
         </h1>
         <p className="text-slate-500 text-sm">Probando Sidebar</p>
