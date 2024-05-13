@@ -10,7 +10,7 @@ const navItems = [
 
 export const Navbar = () => {
   return (
-    <nav className="navbar flex bg-blue-900 bg-opacity-50 rounded">
+    <nav className="navbar flex bg-blue-900 bg-opacity-50 rounded-lg">
       <Link href="/" className="btn btn-ghost text-sm">
         <HomeIcon className="mr-2" />
         <span>Home</span>
