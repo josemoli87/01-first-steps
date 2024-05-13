@@ -1,4 +1,5 @@
 import { PokemonsResponse } from '@/app/pokemons'
+import PokemonGrid from '@/app/pokemons/components/PokemonGrid'
 import Image from 'next/image'
 
 const getPokemons = async (limit = 20, offset = 0) => {
@@ -19,17 +20,7 @@ export default async function Pokemons() {
 
   return (
     <div className='card flex flex-col'>
-      <div className='flex flex-wrap gap-8 justify-center items-center text-center'>
-        {pokemons.map((pokemon) => (
-          <Image
-            key={pokemon.id}
-            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`}
-            width={100}
-            height={100}
-            alt={pokemon.name}
-          />
-        ))}
-      </div>
+      <PokemonGrid pokemons={pokemons} />
     </div>
   )
 }
