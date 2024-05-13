@@ -6,6 +6,7 @@ export interface PokemonsResponse {
 }
 
 export interface Result {
+  url: any
   id: string
   name: string
 }

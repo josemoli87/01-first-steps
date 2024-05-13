@@ -18,7 +18,7 @@ const PokemonCard = ({ pokemon }: Props) => {
           width={100}
           height={100}
           alt={pokemon.name}
-          // priority={false}
+          priority={false}
         />
         <h2 className='card-title capitalize'>{name}</h2>
         <div>
