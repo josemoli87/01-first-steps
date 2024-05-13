@@ -1,7 +1,10 @@
+import CartCounter from '@/app/shopping-cart/components/CartCounter'
+
 export default function Counter() {
   return (
-    <div>
-      <h1>Couter Page</h1>
+    <div className="flex flex-col items-center justify-center w-full h-full">
+      <span>Contador de Prueba</span>
+      <CartCounter />
     </div>
-  );
+  )
 }

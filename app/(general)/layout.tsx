@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar/Navbar";
+import Navbar from '@/components/navbar/Navbar';
 
 export default function GeneralLayout({
   children,
@@ -8,10 +8,12 @@ export default function GeneralLayout({
   return (
     <>
       <Navbar />
-      <main className="flex flex-col items-center p-24">
-        <span className="text-lg">Hola FapiSystem</span>
-        {children}
-      </main>
+      <div className="hero min-h-screen bg-base-200">
+        <div className="hero-content text-center flex-col">
+          <span className="text-lg">Hola FapiSystem</span>
+          {children}
+        </div>
+      </div>
     </>
   );
 }
