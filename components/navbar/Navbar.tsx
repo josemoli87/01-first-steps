@@ -1,16 +1,16 @@
-import { HomeIcon } from '@primer/octicons-react';
-import Link from 'next/link';
-import { ActiveLink } from '../active-link/ActiveLink';
+import { HomeIcon } from '@primer/octicons-react'
+import Link from 'next/link'
+import { ActiveLink } from '../active-link/ActiveLink'
 
 const navItems = [
   { path: '/about', text: 'About' },
   { path: '/pricing', text: 'Pricing' },
   { path: '/contact', text: 'Contact' },
-];
+]
 
 export const Navbar = () => {
   return (
-    <nav className="navbar flex bg-blue-900 bg-opacity-50 m-2 rounded">
+    <nav className="navbar flex bg-blue-900 bg-opacity-50 rounded">
       <Link href="/" className="btn btn-ghost text-sm">
         <HomeIcon className="mr-2" />
         <span>Home</span>
@@ -22,7 +22,7 @@ export const Navbar = () => {
         <ActiveLink key={navItem.path} {...navItem} />
       ))}
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

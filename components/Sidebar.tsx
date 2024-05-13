@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import React from 'react';
-import { IoBrowsersOutline, IoLogoReact } from 'react-icons/io5';
-import SidebarMenuItem from './SidebarMenuItem';
-import { ImCalculator } from 'react-icons/im';
-import Link from 'next/link';
+import Image from 'next/image'
+import React from 'react'
+import { IoBrowsersOutline, IoLogoReact } from 'react-icons/io5'
+import SidebarMenuItem from './SidebarMenuItem'
+import { ImCalculator } from 'react-icons/im'
+import Link from 'next/link'
 
 const menuItems = [
   {
@@ -18,7 +18,7 @@ const menuItems = [
     title: 'Counter',
     subtitle: 'Contador de Prueba',
   },
-];
+]
 
 const Sidebar = () => {
   return (
@@ -35,7 +35,7 @@ const Sidebar = () => {
           </Link>
           <span className="text-blue-500 mr-1"> FPS</span>.
         </h1>
-        <p className="text-slate-500 text-sm">Probando Sidebar</p>
+        <Link href="/about">NavBar</Link>
       </div>
       <div id="profile" className="px-6 py-10">
         <p className="text-slate-500">Pruebas JGM</p>
@@ -88,7 +88,7 @@ const Sidebar = () => {
         </a> */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar
