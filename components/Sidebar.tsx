@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { IoBrowsersOutline, IoLogoReact } from 'react-icons/io5'
+import { IoBrowsersOutline, IoFootball, IoLogoReact } from 'react-icons/io5'
 import SidebarMenuItem from './SidebarMenuItem'
 import { ImCalculator } from 'react-icons/im'
 import Link from 'next/link'
@@ -18,41 +18,46 @@ const menuItems = [
     title: 'Counter',
     subtitle: 'Contador de Prueba',
   },
+  {
+    path: '/dashboard/pokemons',
+    icon: <IoFootball size={40} />,
+    title: 'Pokemons',
+    subtitle: 'Carga estatica',
+  },
 ]
 
 const Sidebar = () => {
   return (
     <div
-      id="menu"
+      id='menu'
       style={{ width: '300px' }}
-      className="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 left-0 h-screen"
-    >
-      <div id="logo" className="my-4 px-6">
-        <h1 className="flex items-center text-lg md:text-2xl font-bold text-white">
-          <IoLogoReact className="mr-2" />
-          <Link href="/">
-            <span className="mr-1">JGM </span>
+      className='bg-gray-900 min-h-screen z-10 text-slate-300 w-64 left-0'>
+      <div id='logo' className='my-4 px-6'>
+        <h1 className='flex items-center text-lg md:text-2xl font-bold text-white'>
+          <IoLogoReact className='mr-2' />
+          <Link href='/'>
+            <span className='mr-1'>JGM </span>
           </Link>
-          <span className="text-blue-500 mr-1"> FPS</span>.
+          <span className='text-blue-500 mr-1'> FPS</span>.
         </h1>
-        <Link href="/about">NavBar</Link>
+        <Link href='/about'>NavBar</Link>
       </div>
-      <div id="profile" className="px-6 py-10">
-        <p className="text-slate-500">Pruebas JGM</p>
-        <a href="#" className="inline-flex space-x-2 items-center">
+      <div id='profile' className='px-6 py-10'>
+        <p className='text-slate-500'>Pruebas JGM</p>
+        <a href='#' className='inline-flex space-x-2 items-center'>
           <span>
             <Image
-              className="rounded-full w-8 h-8"
-              src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=128&q=80"
-              alt=""
+              className='rounded-full w-8 h-8'
+              src='https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=128&q=80'
+              alt=''
               width={50}
               height={50}
             />
           </span>
-          <span className="text-sm md:text-base font-bold">Jose G Molina</span>
+          <span className='text-sm md:text-base font-bold'>Jose G Molina</span>
         </a>
       </div>
-      <div id="nav" className="w-full px-6">
+      <div id='nav' className='w-full px-6'>
         {menuItems.map((item) => (
           <SidebarMenuItem key={item.path} {...item} />
         ))}
