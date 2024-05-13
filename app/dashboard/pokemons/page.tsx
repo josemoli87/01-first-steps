@@ -19,7 +19,7 @@ export default async function Pokemons() {
 
   return (
     <div className='card flex flex-col'>
-      <div className='flex flex-wrap justify-center items-center text-center'>
+      <div className='flex flex-wrap gap-8 justify-center items-center text-center'>
         {pokemons.map((pokemon) => (
           <Image
             key={pokemon.id}
