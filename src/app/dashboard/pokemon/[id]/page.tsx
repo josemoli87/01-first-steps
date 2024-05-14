@@ -1,8 +1,18 @@
 import * as React from '@/src/pokemons'
+import { Metadata } from 'next'
 
 interface Props {
   params: {
     id: string
+  }
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { name } = await getPokemon(params.id)
+
+  return {
+    title: `- ${name}`,
+    description: `Pagina del pokemon ${name}`,
   }
 }
 
