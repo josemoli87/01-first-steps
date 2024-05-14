@@ -1,4 +1,4 @@
-import { Pokemon } from '@/src/pokemons'
+import * as React from '@/src/pokemons'
 
 interface Props {
   params: {
@@ -6,7 +6,7 @@ interface Props {
   }
 }
 
-const getPokemon = async (id: string): Promise<Pokemon> => {
+const getPokemon = async (id: string): Promise<typeof Pokemon> => {
   const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`, {
     cache: 'force-cache',
   }).then((res) => res.json())
