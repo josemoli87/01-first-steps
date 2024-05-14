@@ -21,7 +21,7 @@ export default async function Pokemon({ params }: Props) {
   return (
     <div>
       <h1>Hola Pokemon {params.id}</h1>
-      <div>{JSON.stringify(pokemon)}</div>
+      <div>{pokemon.name}</div>
     </div>
   )
 }
