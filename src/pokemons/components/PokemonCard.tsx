@@ -26,7 +26,7 @@ const PokemonCard = ({ pokemon }: Props) => {
         </div>
         <p className='text-xs font-medium text-gray-800 '>No es Favorito</p>
         <div className='card-actions'>
-          <Link href='/' className='btn btn-primary'>
+          <Link href={`/dashboard/pokemon/${id}`} className='btn btn-primary'>
             Detalles:
           </Link>
         </div>
