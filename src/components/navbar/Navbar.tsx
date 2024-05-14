@@ -10,13 +10,13 @@ const navItems = [
 
 export const Navbar = () => {
   return (
-    <nav className="navbar flex bg-blue-900 bg-opacity-50 rounded-lg">
-      <Link href="/" className="btn btn-ghost text-sm">
-        <HomeIcon className="mr-2" />
+    <nav className='navbar flex bg-blue-900 bg-opacity-50 rounded-lg'>
+      <Link href='/' className='btn btn-ghost text-sm'>
+        <HomeIcon className='mr-2' />
         <span>Home</span>
       </Link>
 
-      <div className="flex flex-1"></div>
+      <div className='flex flex-1'></div>
 
       {navItems.map((navItem) => (
         <ActiveLink key={navItem.path} {...navItem} />

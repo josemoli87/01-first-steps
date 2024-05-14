@@ -1,25 +1,25 @@
 import Image from 'next/image'
 import React from 'react'
 import { IoBrowsersOutline, IoFootball, IoLogoReact } from 'react-icons/io5'
-import SidebarMenuItem from './SidebarMenuItem'
 import { ImCalculator } from 'react-icons/im'
 import Link from 'next/link'
+import SidebarMenuItem from './SidebarMenuItem'
 
 const menuItems = [
   {
-    path: '/dashboard/main',
+    path: '/dashboard/main/',
     icon: <IoBrowsersOutline size={40} />,
     title: 'Dashboard',
     subtitle: 'Visualizar',
   },
   {
-    path: '/dashboard/counter',
+    path: '/dashboard/counter/',
     icon: <ImCalculator size={40} />,
     title: 'Counter',
     subtitle: 'Contador de Prueba',
   },
   {
-    path: '/dashboard/pokemons',
+    path: '/dashboard/pokemons/',
     icon: <IoFootball size={40} />,
     title: 'Pokemons',
     subtitle: 'Carga estatica',
