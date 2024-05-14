@@ -11,6 +11,8 @@ const getPokemon = async (id: string): Promise<Pokemon> => {
     cache: 'force-cache',
   }).then((res) => res.json())
 
+  console.log('se cargo', pokemon.name)
+
   return pokemon
 }
 
